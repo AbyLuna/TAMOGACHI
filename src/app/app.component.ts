@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Mascota } from '@models/mascota.interface';
 
+declare function  initScripts(): void;
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,7 +15,8 @@ export class AppComponent {
 
   // public mascota: Mascota;
 
-  // constructor() {
+  constructor() {
+     initScripts();
   //   this.opciones();
   //   this.menu();
   //   this.mascota = {
@@ -22,7 +26,7 @@ export class AppComponent {
   //     raza: '',
   //     fechaNacimiento: new Date,
   //     edad: '1 dia'
-  //   }
+    }
 
   // }
   // private menu(): void {
