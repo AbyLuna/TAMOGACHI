@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Mascota } from '@models/mascota.interface';
 
 declare function  initScripts(): void;
@@ -9,14 +9,15 @@ declare function  initScripts(): void;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
 
 
 
   // public mascota: Mascota;
 
   constructor() {
-     initScripts();
+
   //   this.opciones();
   //   this.menu();
   //   this.mascota = {
@@ -26,6 +27,9 @@ export class AppComponent {
   //     raza: '',
   //     fechaNacimiento: new Date,
   //     edad: '1 dia'
+    }
+    ngOnInit(){
+      initScripts();
     }
 
   // }
