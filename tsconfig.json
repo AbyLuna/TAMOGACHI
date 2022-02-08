@@ -10,7 +10,8 @@
       "@pages/*":["src/app/pages/*"],
       "@pipes/*":["src/app/pipes/*"],
       "@services/*":["src/app/services/*"],
-      "@auth/*":["src/app/auth/*"]
+      "@auth/*":["src/app/auth/*"],
+      "@app/*":["src/app/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
