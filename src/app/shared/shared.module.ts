@@ -11,12 +11,21 @@ import { AsideComponent } from '@shared/aside/aside.component';
 @NgModule({
   declarations: [
     NavbarComponent,
-    SidebarComponent,
+     SidebarComponent,
     FooterComponent,
-    AsideComponent
+     AsideComponent
   ],
   imports: [
     CommonModule
+  ],
+
+  exports: [
+    NavbarComponent,
+    SidebarComponent,
+    FooterComponent,
+    AsideComponent
   ]
+
+
 })
 export class SharedModule { }
