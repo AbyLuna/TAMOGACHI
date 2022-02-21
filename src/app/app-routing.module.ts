@@ -10,7 +10,7 @@ import { pagesRoutes } from '@pages/pages.routing';
 
 const routes: Routes = [
  { path: '', redirectTo: 'auth', pathMatch: 'full'},
- { path: '**', redirectTo: 'auths' },
+
  {
   path: 'dashboard',
    component:PagesComponent,
@@ -35,7 +35,8 @@ const routes: Routes = [
        loadChildren: () => import('@auth/auth.module').then(module => module.AuthModule)
     }
    ]
-  }
+  },
+  { path: '**', redirectTo: 'auth' }
 
 ];
 
